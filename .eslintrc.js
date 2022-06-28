@@ -5,6 +5,7 @@ module.exports = {
     node: true
   },
   extends: [
+    'next/core-web-vitals',
     'plugin:react/recommended',
     'standard'
   ],
@@ -12,12 +13,13 @@ module.exports = {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 'latest',
+    ecmaVersion: '7',
     sourceType: 'module'
   },
   plugins: [
     'react'
   ],
   rules: {
+    'react/prop-types': 'off'
   }
 }
